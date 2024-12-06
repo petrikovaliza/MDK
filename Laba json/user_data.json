@@ -1,0 +1,27 @@
+{
+    "users": [
+        {
+            "username": "asdhff",
+            "password": "dasdas"
+        },
+        {
+            "username": "electronic",
+            "password": "ak3243dsf",
+            "email": "liawesda.ru",
+            "date_of_birth": "2000-03-31",
+            "phone_number": "791943243"
+        },
+        {
+            "username": "sdfsdfsdfsdf",
+            "password": "sdfsdfsdf"
+        },
+        {
+            "username": "Gladiator",
+            "password": "Bessmertniy_Voin"
+        },
+        {
+            "username": "asdhff",
+            "password": "dasdas"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>eche.jpg</file>
+    <file>kotiki.png</file>
+    <file>mishka.jpg</file>
+  </qresource>
+</RCC>

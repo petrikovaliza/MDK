@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>na_vnim2.png</file>
+    <file>na_vnim3.png</file>
+    <file>na_vnimatelnost.png</file>
+  </qresource>
+</RCC>

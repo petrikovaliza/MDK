@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1020</width>
+    <height>635</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+	background-color: #2B5DD1;
+    color: #FFFFFF;
+    border-style: outset;
+    padding: 2px;
+    font: bold 20px;
+    border-width: 6px;
+    border-radius: 10px;
+    border-color: #2752B8;
+}
+QPushButton:hover {
+    background-color: #A52A2A;
+}</string>
+  </property>
+  <widget class="QPushButton" name="add_button">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>150</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add new</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save_Button">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>570</y>
+     <width>391</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save Changes</string>
+   </property>
+  </widget>
+  <widget class="QCalendarWidget" name="calendarWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>561</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 9pt &quot;Yu Gothic UI Semibold&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1021</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:24pt;
+background-color: rgb(13, 67, 90);
+color:white;
+border-radius:8px;</string>
+   </property>
+   <property name="text">
+    <string>                                           Daily Task Planner</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="taskLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>160</y>
+     <width>231</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="taskListWidget">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>200</y>
+     <width>391</width>
+     <height>361</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
