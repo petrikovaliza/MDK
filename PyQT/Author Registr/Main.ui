@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Main</class>
+ <class>MainWindow</class>
  <widget class="QWidget" name="MainWindow">
   <property name="geometry">
    <rect>
@@ -11,7 +11,16 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Главное окно</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QObject  {
+	
+	font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;
+	background-color: rgb(255, 240, 247);
+}
+
+</string>
   </property>
  </widget>
  <resources/>

@@ -6,35 +6,52 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>283</width>
-    <height>355</height>
+    <width>381</width>
+    <height>509</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Регистрация</string>
   </property>
-  <widget class="QLineEdit" name="name_text">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>20</y>
-     <width>221</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="placeholderText">
-    <string>Имя</string>
-   </property>
-  </widget>
+  <property name="styleSheet">
+   <string notr="true">QObject  {
+	
+	font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;
+	background-color: rgb(255, 240, 247);
+}
+QPushButton {
+background-color: rgb(214, 196, 202);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+}
+QPushButton:pressed {
+   
+	background-color: rgb(100, 102, 115);
+    border-style: inset;
+}
+QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}
+QLineEdit[echoMode=&quot;2&quot;] {
+    lineedit-password-character: 9679;
+}
+</string>
+  </property>
   <widget class="QLineEdit" name="lastname_next">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>70</y>
-     <width>221</width>
+     <x>60</x>
+     <y>90</y>
+     <width>261</width>
      <height>31</height>
     </rect>
    </property>
@@ -45,9 +62,9 @@
   <widget class="QLineEdit" name="login_textReg">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>120</y>
-     <width>221</width>
+     <x>60</x>
+     <y>140</y>
+     <width>261</width>
      <height>31</height>
     </rect>
    </property>
@@ -58,9 +75,9 @@
   <widget class="QLineEdit" name="password_textReg">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>170</y>
-     <width>221</width>
+     <x>60</x>
+     <y>190</y>
+     <width>261</width>
      <height>31</height>
     </rect>
    </property>
@@ -71,9 +88,9 @@
   <widget class="QPushButton" name="zaregBtn">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>260</y>
-     <width>161</width>
+     <x>90</x>
+     <y>360</y>
+     <width>206</width>
      <height>31</height>
     </rect>
    </property>
@@ -84,14 +101,30 @@
   <widget class="QPushButton" name="cancelBtn">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>300</y>
-     <width>161</width>
+     <x>90</x>
+     <y>410</y>
+     <width>206</width>
      <height>31</height>
     </rect>
    </property>
    <property name="text">
     <string>Отмена</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="name_text">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>40</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Имя</string>
    </property>
   </widget>
  </widget>

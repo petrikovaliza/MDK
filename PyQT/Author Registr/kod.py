@@ -1,15 +1,15 @@
 from PyQt5 import QtWidgets
 import sqlite3
-import Avtoriz_ui, Main_ui, Regis_ui
+import Avtoriz, Main, Regis, WrongW
 
 class Avtorization(QtWidgets.QWidget):
     
     def __init__(self):
         QtWidgets.QWidget.__init__(self)
-        self.ui = Avtoriz_ui.Ui_Avtorization()
+        self.ui = Avtoriz.Ui_Avtorization()
         self.ui.setupUi(self)
-        self.regBtn.clicked.connect(self.reg_form)
-        self.enterBtn.clicked.connect(self.auto)
+        self.ui.enterBtn.clicked.connect(self.avto)
+        self.ui.regBtn.clicked.connect(self.reg_form)
     
     def reg_form(self):
         avto.close()
@@ -17,16 +17,22 @@ class Avtorization(QtWidgets.QWidget):
         
     def avto(self):
         
-        login = self.ui.login_text.text()
-        passw = self.ui.password_text.text()
-        
+        login = self.ui.login_text.text().strip()
+        passw = self.ui.password_text.text().strip()
+
+        if not login or not passw:
+            wrong.show()
+            wrong.ui.wrong_label.setText("Заполните оба поля!")
+            return
+    
         db = sqlite3.connect("magaz.db")
         cursor = db.cursor()
         cursor.execute(f'SELECT name, last_name FROM users WHERE login = "{login}" and password = "{passw}"')
         result = cursor.fetchone()
         
         if result is None:
-            QtWidgets.QMessageBox.about(None, "Оповещение", "Неверные данные")
+            wrong.show()
+            wrong.ui.wrong_label.setText("Неверные данные")
         else:
             avto.close()
             main.show()
@@ -36,7 +42,7 @@ class Avtorization(QtWidgets.QWidget):
 class Registration(QtWidgets.QWidget):
     def __init__(self):
         QtWidgets.QWidget.__init__(self)
-        self.ui = Regis_ui.Ui_Registration()
+        self.ui = Regis.Ui_Registration()
         self.ui.setupUi(self)
         self.ui.zaregBtn.clicked.connect(self.zareg)
         self.ui.cancelBtn.clicked.connect(self.cancel)
@@ -46,32 +52,50 @@ class Registration(QtWidgets.QWidget):
         db = sqlite3.connect("magaz.db")
         cursor = db.cursor()
         
-        name = self.ui.name_text.text()
-        last_name = self.ui.lastname_text.text()
-        login = self.ui.login_textReg.text()
-        password = self.ui.password_textReg.text()
+        name = self.ui.name_text.text().strip()
+        last_name = self.ui.lastname_next.text().strip()
+        login = self.ui.login_textReg.text().strip()
+        password = self.ui.password_textReg.text().strip()
         
+        if not all([name, last_name, login, password]):
+            wrong.show()
+            wrong.ui.wrong_label.setText("Заполните все поля!")
+            return
+        
+        db = sqlite3.connect("magaz.db")
+        cursor = db.cursor()
         row = (name, last_name, login, password)
-        command = "INSERT INTO users (name, last_name, login2, password) VALUES (?, ?, ?, ?)"
+        command = "INSERT INTO users (name, last_name, login, password) VALUES (?, ?, ?, ?)"
         cursor.execute(command, row)
         
         db.commit()
         
-        QtWidgets.QMessageBox.information(None, "Регистрация", "Вы успешно зарегистрировались",
-                                          buttons=QtWidgets.QMessageBox.Ok,
-                                          defaultButton=QtWidgets.QMessageBox.Ok)
+        wrong.show()
+        wrong.ui.wrong_label.setText("Вы успешно зарегистрировались!")
         
         reg.close()
-        avto.close()
+        avto.close()  
         
     def cancel(self):
         reg.close()
         avto.show()
+    
+class Wrong(QtWidgets.QWidget):   
+    
+    def __init__(self):
+        QtWidgets.QWidget.__init__(self)
+        self.ui = WrongW.Ui_WrongWindow()
+        self.ui.setupUi(self)
+        self.ui.okBtn.clicked.connect(self.close_wrong)
+        
+    def close_wrong(self):
+        
+        wrong.close()
         
 class MainWindow(QtWidgets.QWidget):
     def __init__(self):
         QtWidgets.QWidget.__init__(self)
-        self.ui = Main_ui.Ui_Main()
+        self.ui = Main.Ui_MainWindow()
         self.ui.setupUi(self)
         
 if __name__ == '__main__':
@@ -80,5 +104,6 @@ if __name__ == '__main__':
     avto = Avtorization()
     avto.show()
     reg = Registration()
-    main = Main()
+    main = MainWindow()
+    wrong = Wrong()
     sys.exit(app.exec_())
