@@ -36,8 +36,7 @@ class Avtorization(QtWidgets.QWidget):
         else:
             avto.close()
             main.show()
-            main.ui.name_label.setText(str(result[0]))
-            main.ui.name_label_2.setText(str(result[1]))
+            main.ui.name_label.setText(str(f"{result[0]} {result[1]}"))
 
 class Registration(QtWidgets.QWidget):
     def __init__(self):

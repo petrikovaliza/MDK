@@ -14,14 +14,24 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(400, 300)
+        MainWindow.resize(382, 340)
         MainWindow.setStyleSheet("QObject  {\n"
 "    \n"
-"    font: 63 11pt \"Yu Gothic UI Semibold\";\n"
+"    font: 63 14pt \"Yu Gothic UI Semibold\";\n"
 "    background-color: rgb(255, 240, 247);\n"
 "}\n"
 "\n"
 "")
+        self.name_label = QtWidgets.QLabel(MainWindow)
+        self.name_label.setGeometry(QtCore.QRect(30, 50, 321, 221))
+        font = QtGui.QFont()
+        font.setFamily("Yu Gothic UI Semibold")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setItalic(False)
+        self.name_label.setFont(font)
+        self.name_label.setText("")
+        self.name_label.setObjectName("name_label")
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)

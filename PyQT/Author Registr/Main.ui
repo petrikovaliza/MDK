@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>382</width>
+    <height>340</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,12 +16,33 @@
   <property name="styleSheet">
    <string notr="true">QObject  {
 	
-	font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;
+	font: 63 14pt &quot;Yu Gothic UI Semibold&quot;;
 	background-color: rgb(255, 240, 247);
 }
 
 </string>
   </property>
+  <widget class="QLabel" name="name_label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>321</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI Semibold</family>
+     <pointsize>14</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
