@@ -1,0 +1,3 @@
+﻿  С++ except.cpp
+E:\Я\МДК Работы\С++ except\С++ except.cpp(16,14): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+  С++ except.vcxproj -> E:\Я\МДК Работы\С++ except\x64\Debug\С++ except.exe

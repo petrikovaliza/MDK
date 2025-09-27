@@ -1,0 +1,18 @@
+Error throw: сумма снятия больше баланса!
+Date and time of exception: Feb 13 2025 14:58:02
+In a path: E:\Я\МДК Работы\С++ except\С++ except.cpp
+In a function: main
+At line: 120
+
+Error throw: сумма снятия больше баланса!
+Date and time of exception: Feb 13 2025 15:02:13
+In a path: E:\Я\МДК Работы\С++ except\С++ except.cpp
+In a function: main
+At line: 120
+
+Error throw: Такой операции нет!
+Date and time of exception: Feb 13 2025 15:02:13
+In a path: E:\Я\МДК Работы\С++ except\С++ except.cpp
+In a function: main
+At line: 120
+

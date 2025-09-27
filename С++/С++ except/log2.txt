@@ -1,0 +1,66 @@
+Error throw: Пользователь 'Ђ«Ёб ' не найден.
+Date and time of exception: Feb 14 2025 08:59:41
+In a path: E:\Я\МДК Работы\С++ except\С++ except.cpp
+In a function: user_data
+At line: 130
+
+Error throw: Пользователь 'Ђ­ в®«Ё©' не найден.
+Date and time of exception: Feb 14 2025 09:02:04
+In a path: E:\Я\МДК Работы\С++ except\С++ except.cpp
+In a function: user_data
+At line: 131
+
+Error throw: Пользователь 'Ђ­ в®«Ё©' не найден.
+Date and time of exception: Feb 14 2025 09:03:04
+In a path: E:\Я\МДК Работы\С++ except\С++ except.cpp
+In a function: user_data
+At line: 132
+
+Error throw: Неверный пароль или электронная почта.
+Date and time of exception: Feb 14 2025 09:04:07
+In a path: E:\Я\МДК Работы\С++ except\С++ except.cpp
+In a function: user_data
+At line: 131
+
+Error throw: Пользователь 'Alune' не найден.
+Date and time of exception: Feb 14 2025 09:06:32
+In a path: E:\Я\МДК Работы\С++ except\С++ except.cpp
+In a function: user_data
+At line: 134
+
+Error throw: Пользователь 'werwer' не найден.
+Date and time of exception: Feb 14 2025 09:22:06
+In a path: E:\Я\МДК Работы\С++ except\С++ except.cpp
+In a function: main
+At line: 189
+
+Error throw: Имя пользователя не может быть пустым.
+Date and time of exception: Feb 14 2025 09:34:22
+In a path: E:\Я\МДК Работы\С++ except\С++ except.cpp
+In a function: main
+At line: 189
+
+Error throw: Сумма снятия больше баланса!
+Date and time of exception: Feb 14 2025 09:37:00
+In a path: E:\Я\МДК Работы\С++ except\С++ except.cpp
+In a function: main
+At line: 167
+
+Error throw: Имя пользователя не может быть пустым.
+Date and time of exception: Feb 14 2025 09:37:00
+In a path: E:\Я\МДК Работы\С++ except\С++ except.cpp
+In a function: main
+At line: 188
+
+Error throw: Такой операции нет!
+Date and time of exception: Feb 14 2025 09:37:00
+In a path: E:\Я\МДК Работы\С++ except\С++ except.cpp
+In a function: main
+At line: 167
+
+Error throw: Имя пользователя не может быть пустым.
+Date and time of exception: Feb 14 2025 09:37:00
+In a path: E:\Я\МДК Работы\С++ except\С++ except.cpp
+In a function: main
+At line: 188
+

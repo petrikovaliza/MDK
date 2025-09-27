@@ -1,0 +1,5 @@
+﻿  Zachet 1.cpp
+C:\Users\petri\Desktop\Зачет\Zachet 1\Zachet 1.cpp(40,12): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+C:\Users\petri\Desktop\Зачет\Zachet 1\Zachet 1.cpp(45,20): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\petri\Desktop\Зачет\Zachet 1\Zachet 1.cpp(50,23): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Zachet 1.vcxproj -> C:\Users\petri\Desktop\Зачет\Zachet 1\x64\Debug\Zachet 1.exe

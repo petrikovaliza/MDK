@@ -1,0 +1,16 @@
+﻿  С++ chablon.cpp
+E:\Я\MDK\С++ chablon\С++ chablon.cpp(21,7): error C2059: синтаксическая ошибка: user-defined literal
+  E:\Я\MDK\С++ chablon\С++ chablon.cpp(21,7):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	E:\Я\MDK\С++ chablon\С++ chablon.cpp(42,2):
+  	выполняется компиляция ссылки на экземпляр класс шаблон функции "Pair<T>"
+  
+E:\Я\MDK\С++ chablon\С++ chablon.cpp(21,13): error C2238: непредвиденные лексемы перед ";"
+E:\Я\MDK\С++ chablon\С++ chablon.cpp(22,7): error C2059: синтаксическая ошибка: user-defined literal
+E:\Я\MDK\С++ chablon\С++ chablon.cpp(22,13): error C2238: непредвиденные лексемы перед ";"
+E:\Я\MDK\С++ chablon\С++ chablon.cpp(24,12): error C2143: синтаксическая ошибка: отсутствие ")" перед "user-defined literal"
+E:\Я\MDK\С++ chablon\С++ chablon.cpp(24,12): error C2143: синтаксическая ошибка: отсутствие ";" перед "user-defined literal"
+E:\Я\MDK\С++ chablon\С++ chablon.cpp(24,12): error C2059: синтаксическая ошибка: user-defined literal
+E:\Я\MDK\С++ chablon\С++ chablon.cpp(24,26): error C2059: синтаксическая ошибка: )
+E:\Я\MDK\С++ chablon\С++ chablon.cpp(24,28): error C2334: непредвиденные лексемы перед ":"; пропуск вероятного тела функции
+E:\Я\MDK\С++ chablon\С++ chablon.cpp(42,1): error C1903: не удается восстановить после предыдущих ошибок; остановка компиляции
